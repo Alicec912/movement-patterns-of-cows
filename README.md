@@ -1,0 +1,7 @@
+The purpose of this report is to analyse the movement patterns of cows using GPS and IMU data collected from collars equipped with a GPS module and an IMU (Inertial Measurement Unit). The GPS provides the cow's location and movement direction, while the IMU provides the heading, indicating the direction the cow's head is facing. The primary goal is to investigate the assumption that cows face straight ahead while walking.
+
+This report is structured as follows:
+
+1. **Data Cleaning and Preparation**: The GPS and IMU data are loaded from CSV files. We begin by checking the data for completeness and duplication. We then convert the columns to suitable formats and merge the GPS and IMU data based on the Serial Number and NZDT columns. The headings are normalised to a common format (within 0 to 360 degrees).
+2. **Data Visualisation and Analysis**: We explore the data through visualisations and statistical analysis. The visualisations include examining the distribution of heading differences, plotting the paths of the cows on a map, and visualizing the relationship between GPS speed and heading difference. And also conduct a multiple regression model to understand the relationship between the heading difference and other variables such as GPS speed.
+3. **Conclusion and Comments**: The results from the data analysis are summarised, providing insights into the movement patterns of cows, identifying potential sources of error and suggesting improved ways of data collection.
